@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/imagem_agenda.png" alt="logotipo de agenda"/>
+            <h1>Agenda de Contatos</h1>
+        </header>
+        <form id="formulario-inputs">
+            <input id="nome-contato" type="text" required placeholder="Nome do Contato" required/>
+            <input id="ddd-contato" type="text" required placeholder="DDD" size="3" pattern="[0-9]{2}" required/>
+            <input id="tel-contato" type="text" required placeholder="Telefone Celular" pattern="[0-9]{9}" required/>
+            <button type="submit">Cadastrar +</button>
+        </form>
+        <p>Obs: os DDDs devem estar no formato "xx" e os telefones no formato "xxxxxxxxx (9 dígitos)"</p>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome do Contato:</th>
+                    <th>Celular do Contato:</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
